@@ -20,7 +20,7 @@ nx.draw_networkx(g, pos={(x,y):(x,-y) for x,y in g.nodes()}, labels=labels)
 
 
 for i in range(NUMBER_OF_EXPERIMETNS):
-    plt.figure(i + 1)
+    plt.subplots()
     nx.draw_networkx(g, pos={(x,y):(x,-y) for x,y in g.nodes()}, labels=labels)
     n1 = random.choice(a[OBSTACLES:])
     n2 = random.choice(a[OBSTACLES:])
